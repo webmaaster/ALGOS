@@ -37,23 +37,31 @@
 
 # [4,3,6]
 # Go thrugh each value in array/list and add it to total
-def sum(somelist):
-    total = 0
-    for i in range(0, len(somelist), 1):
-        total += somelist[i]
-    return total 
+# def sum(somelist):
+#     total = 0
+#     for i in range(0, len(somelist), 1):
+#         total += somelist[i]
+#     return total 
 
-print(sum([4,3,6]))
-
-
+# print(sum([4,3,6]))
 
 
 
 
 
 
+
+# 3.
 # Average - Create a function that takes a list and returns the average of all the values.x
 # Example: average([1,2,3,4]) should return 2.5
+def average(somelist):
+    totalsum = sum(somelist)
+    avg= float(totalsum/len(somelist))
+    return avg 
+
+print(average([1,2,3,4]))
+
+
 # Length - Create a function that takes a list and returns the length of the list.
 # Example: length([37,2,1,-9]) should return 4
 # Example: length([]) should return 0
